@@ -46,11 +46,10 @@ const appData = {
       "icon": "fas fa-seedling",
       "topics": [
         "OSI Model and TCP/IP Stack",
-        "IP Addressing and Subnetting", 
         "Ethernet Fundamentals",
-        "Basic Switching Concepts",
-        "Introduction to Routing",
         "ARP and DHCP Basics",
+        "Introduction to Routing",
+        "Interior Gateway Routing Protocols",
         "Basic Network Troubleshooting"
       ]
     },
@@ -60,13 +59,12 @@ const appData = {
       "color": "warning",
       "icon": "fas fa-chart-line",
       "topics": [
-        "VLAN Configuration and Trunking",
-        "Spanning Tree Protocol (STP)",
-        "OSPF and EIGRP Routing", 
-        "Access Control Lists (ACLs)",
-        "NAT and PAT Implementation",
+        "OSPF and ISIS Routing", 
+        "Border Gateway Protocol(BGP)", 
+        "LDP and RSVP for building MPLS control plane", 
+        "Traffic Engineering", 
         "VPN Fundamentals",
-        "Quality of Service (QoS) Basics"
+        "Access Control Lists (ACLs)"
       ]
     },
     {
@@ -75,13 +73,15 @@ const appData = {
       "color": "danger",
       "icon": "fas fa-rocket",
       "topics": [
-        "BGP Configuration and Optimization",
-        "MPLS and VPN Technologies",
-        "Advanced QoS Implementation",
-        "Network Security and Firewalls", 
-        "High Availability and Redundancy",
+        "Advanced TCP concepts",
+        "Tunneling Protocols for Routing",
+        "Segment Routing",
+        "Layer 2 VPNs and EVPNs",
+        "Quality of Service (QoS) Basics",
         "Network Automation Basics",
-        "Performance Monitoring"
+        "Best Practices for Networking"
+
+
       ]
     },
     {
@@ -92,11 +92,10 @@ const appData = {
       "topics": [
         "Protocol-Specific Deep Dives",
         "Vendor-Specific Configurations",
-        "Troubleshooting Specific Issues",
-        "Certification Preparation",
-        "Project-Based Learning", 
-        "Team Training Sessions",
-        "Custom Lab Scenarios"
+        "Network Programming using Python",
+        "Automation Tools - Ansible",
+        "Advanced QoS Concepts", 
+        "Testing Network Protocols"
       ]
     }
   ],
@@ -104,7 +103,7 @@ const appData = {
     {
       "title": "Data Center Design",
       "icon": "fas fa-building", 
-      "description": "Complete data center network architecture, including redundancy planning and scalability considerations."
+      "description": "Complete data center architecture, including redundancy planning and scalability considerations."
     },
     {
       "title": "Network Troubleshooting",
@@ -114,7 +113,7 @@ const appData = {
     {
       "title": "Routing Optimization", 
       "icon": "fas fa-route",
-      "description": "BGP optimization, OSPF tuning, and advanced routing protocol configuration for optimal performance."
+      "description": "BGP optimization, IGP tuning, and advanced routing configuration for optimal performance."
     },
     {
       "title": "Network Security",
@@ -135,12 +134,12 @@ const appData = {
   "portfolio": [
     {
       "title": "Enterprise Data Center Redesign",
-      "client": "Fortune 500 Manufacturing Company",
+      "client": "Manufacturing Company",
       "duration": "6 Months",
       "type": "Complex", 
       "status": "Completed",
       "badge_color": "success",
-      "description": "Complete network architecture overhaul for a 50,000 sq ft data center, implementing redundant spine-leaf topology with 99.99% uptime requirements."
+      "description": "Complete network architecture overhaul for a large data center, implementing redundant spine-leaf topology with 99.99% uptime requirements."
     },
     {
       "title": "ISP Network Optimization",
@@ -149,7 +148,7 @@ const appData = {
       "type": "Critical",
       "status": "Critical", 
       "badge_color": "danger",
-      "description": "Resolved critical BGP routing issues causing 15% packet loss and optimized network performance across 200+ edge routers."
+      "description": "Resolved critical BGP routing issues causing 50% packet loss and optimized network performance across 200+ edge routers."
     },
     {
       "title": "Campus Network Segmentation", 
@@ -162,7 +161,7 @@ const appData = {
     },
     {
       "title": "Cloud Migration Network Design",
-      "client": "Healthcare Technology Company", 
+      "client": "Healthcare Company", 
       "duration": "2 Months",
       "type": "Cloud",
       "status": "Cloud",
@@ -313,6 +312,16 @@ const appData = {
       "tags": ["ISIS", "Troubleshooting", "IP Address", "Routing"], 
       "type": "markdown",
       "file": "pages/isis-duplicate-ip.md"
+    },
+    {
+      "id": "isis-adjacency",
+      "title": "ISIS Adjacency Basics",
+      "category": "Basic",
+      "read_time": "10 min read",
+      "description": "Basic ISIS Adjacency Setup and packet Flow ",
+      "tags": ["ISIS", "Basic", "Routing"], 
+      "type": "markdown",
+      "file": "pages/ISIS-Adjacency.md"
     },
     {
       "id": "rsvp-message-types", 
